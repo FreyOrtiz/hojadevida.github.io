@@ -1,4 +1,3 @@
-/* Reset básico */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -9,7 +8,6 @@ body {
     min-height: 100vh;
 }
 
-/* Encabezado */
 h1 {
     grid-column: span 2;
     background: #0e2a3f;
@@ -20,7 +18,6 @@ h1 {
     font-size: 26px;
 }
 
-/* Imagen debajo del nombre */
 img {
     background-color: #0e2a3f;
     display: block;
@@ -32,9 +29,7 @@ img {
     border: 5px solid #0e2a3f;
 }
 
-/* Párrafo introductorio */
 p {
-    grid-column: span 2;
     max-width: 98%;
     margin: 20px auto;
     text-align: left;
@@ -42,7 +37,6 @@ p {
     line-height: 1.5;
 }
 
-/* Columna izquierda */
 aside {
     background: #c5ccd3;
     padding: 30px;
@@ -67,7 +61,6 @@ aside li {
     font-size: 14px;
 }
 
-/* Columna derecha */
 main {
     background: white;
     padding: 30px;
@@ -100,7 +93,6 @@ main li {
     line-height: 1.5;
 }
 
-/* 🔹 Responsividad 🔹 */
 @media (max-width: 1024px) {
     body {
         grid-template-columns: 1fr 2fr;
@@ -109,7 +101,7 @@ main li {
 
 @media (max-width: 768px) {
     body {
-        grid-template-columns: 1fr; /* Se apila en una sola columna */
+        grid-template-columns: 1fr; 
     }
 
     h1 {
@@ -123,9 +115,9 @@ main li {
     }
 
        aside, main {
-        width: 100%;              /* 🔹 hace que ocupen todo el ancho */
+        width: 100%;              
         padding: 20px;
-        box-sizing: border-box;   /* 🔹 asegura que padding no desborde */
+        box-sizing: border-box;   
     }
 
     main h2 {
