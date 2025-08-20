@@ -122,8 +122,10 @@ main li {
         margin: 10px auto;
     }
 
-    aside, main {
+       aside, main {
+        width: 100%;              /* 🔹 hace que ocupen todo el ancho */
         padding: 20px;
+        box-sizing: border-box;   /* 🔹 asegura que padding no desborde */
     }
 
     main h2 {
