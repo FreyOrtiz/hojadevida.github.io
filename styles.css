@@ -1,0 +1,100 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    display: grid;
+    grid-template-columns: 8fr 20fr;
+    min-height: 10vh;
+}
+
+/* Encabezado */
+h1 {
+    grid-column: span 2;
+    background: #0e2a3f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 26px;
+}
+
+/* Imagen debajo del nombre */
+img {
+    background-color: #0e2a3f;
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 300px;
+    height: auto;
+    border-radius: 50px;
+    border: 5px solid #0e2a3f;
+}
+
+/* Párrafo introductorio */
+p {
+    grid-column: span 2;
+    max-width: 98%;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Columna izquierda */
+aside {
+    background: #c5ccd3;
+    padding: 30px;
+}
+
+aside h2 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 4px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0e2a3f;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+aside li {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+/* Columna derecha */
+main {
+    background: white;
+    padding: 30px;
+}
+
+main h2 {
+    border-bottom: 1px solid #0e2a3f;
+    padding-bottom: 4px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0e2a3f;
+}
+
+main h3 {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+main h4 {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+main p,
+main li {
+    font-size: 14px;
+    line-height: 1.5;
+}
